@@ -1,6 +1,9 @@
 body {
     font-family: Roboto;
 }
+main {
+    max-width: 1320px;
+}
 #container {
     display: grid;
     height: 100vh;
@@ -119,11 +122,11 @@ nav a {
 /* END CAROUSEL */
 
 /* NEWS */
-.news {
+.news, .card-container {
     display: flex;
     padding: 60px 50px;
 }
-.news .news-container {
+.news .news-container, .card {
     width: 33%;
     padding: 0 10px;
 }
@@ -186,3 +189,108 @@ nav a {
 .hover-show .news h2 {
     margin: 9px 0 25px;
 }
+
+
+h3 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: right;
+    color: #ED6562;
+    width: 55%;
+    display: block;
+    margin-right: 0;
+}
+.h3-2 {
+    text-align: left;
+    padding: 0 50px;
+    position: absolute;
+    top: 45%;
+}
+.onde-2 {
+    position: relative;
+}
+.onde-2 img {
+    width: -webkit-fill-available;
+}
+
+/* CARD */
+.card {
+    text-align: center;
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 10px;
+    padding: 0 40px;
+}
+.card img {
+    width: 219px;
+    height: auto;
+    display: block;
+    margin: 33px auto;
+}
+.card span {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 33px;
+    padding-bottom: 17px;
+}
+.card span:first-child {
+    border-bottom: 2px solid #fff;
+}
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.card a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    border-radius: 16px;
+    padding: 19px;
+    margin-bottom: 70px;
+}
+.card:nth-child(1) a {
+    background-color: #F07C79;
+}
+.card:nth-child(2) a {
+    background-color: #E2CA40;
+}
+.card:nth-child(3) a {
+    background-color: #28AFB0;
+}
+.card:nth-child(1) span {
+    color: #F07C79;
+    border-bottom: 2px solid #F07C79;
+}
+.card:nth-child(2) span {
+    color: #E2CA40;
+    border-bottom: 2px solid #E2CA40;
+}
+.card:nth-child(3) span {
+    color: #28AFB0;
+    border-bottom: 2px solid #28AFB0;
+}
+.card:hover {
+    color: #FFFFFF;
+}
+.card:hover:nth-child(1) {
+    background-color: #F07C79;
+}
+.card:hover:nth-child(2) {
+    background-color: #E2CA40;
+}
+.card:hover:nth-child(3) {
+    background-color: #28AFB0;
+}
+.card:hover span {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+/* END CARD */
