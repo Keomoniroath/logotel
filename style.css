@@ -18,12 +18,13 @@ header {
     display: flex;
     align-items: center;
     opacity: 0.8;
+    padding: 30px 122px 30px 60px;
+    justify-content: space-between;
     background-color: rgba(39, 39, 39, 1);
     height: 120px;
-
-    grid-template-columns: repeat(12, 1fr);
-    display: grid;
-    gap: 19px;
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* display: grid; */
+    /* gap: 19px; */
     position: fixed;
     top: 0;
     width: 1320px;
@@ -32,10 +33,6 @@ header {
 .logo {
     height: 60px;
     width: 164px;
-    grid-column: 2 / span 1;
-}
-nav {
-    grid-column: 8 / span 5;
 }
 nav a {
     margin-right: 50px;
@@ -294,3 +291,47 @@ h3 {
     border-bottom: 2px solid #FFFFFF;
 }
 /* END CARD */
+
+/* FOOTER */
+footer {
+    background-color: #272727;
+    padding: 80px 60px 50px 60px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.social {
+    list-style: none;
+    display: flex;
+}
+.social img {
+    width: 40px;
+    height: auto;
+    margin-right: 16px;
+}
+footer .logo {
+    display: block;
+}
+footer ul {
+    padding: 0;
+}
+.bloc-left ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.bloc-left {
+    font-weight: 500;
+}
+.bloc-right {
+    font-weight: 700;
+}
+.bloc-left ul a span {
+    padding: 0 8px;
+}
+.bloc-left>span {
+    display: block;
+    margin-top: 25px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
