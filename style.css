@@ -1,0 +1,46 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    border: 5px solid red;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    background-color: rgba(39, 39, 39, 1);
+    height: 120px;
+
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    gap: 19px;
+    position: fixed;
+    top: 0;
+    width: 1320px;
+    z-index: 1;
+}
+
+.logo {
+    height: 60px;
+    width: 164px;
+    grid-column: 2 / span 1;
+}
+
+nav {
+    grid-column: 8 / span 5;
+}
+
+nav a {
+    margin-right: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
