@@ -1,3 +1,6 @@
+body {
+    font-family: Roboto;
+}
 #container {
     display: grid;
     height: 100vh;
@@ -5,11 +8,9 @@
     max-width: 1320px;
     margin: 0 auto;
 }
-
 header, main, footer {
     border: 5px solid red;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -25,17 +26,14 @@ header {
     width: 1320px;
     z-index: 1;
 }
-
 .logo {
     height: 60px;
     width: 164px;
     grid-column: 2 / span 1;
 }
-
 nav {
     grid-column: 8 / span 5;
 }
-
 nav a {
     margin-right: 50px;
     color: #FFFFFF;
@@ -44,3 +42,78 @@ nav a {
     font-size: 20px;
     font-weight: 500;
 }
+
+/* CAROUSEL */
+* {box-sizing:border-box}
+.slide-container {
+  position: relative;
+  margin: auto;
+}
+.slide {
+    display: block;
+}
+.slide img {
+    height: 820px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 0 90px;
+}
+.next {
+  right: 0;
+}
+.text {
+  color: #f2f2f2;
+  padding: 8px 218px;
+  position: absolute;
+  top: 120px;
+  width: 75%;
+  text-align: left;
+  font-family: Helvetica;;
+}
+.dot {
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 60px;
+    opacity: 30%;
+    background-color: #F07C79;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Roboto monospace;
+    text-align: center;
+    padding: 16px;
+}
+.active, .dot:hover {
+    opacity: 1;
+}
+.text h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+.text p {
+    font-size: 20px;
+}
+.text a {
+    font-size: 20px;
+    background-color: #F07C79;
+    border-radius: 16px;
+    padding: 19px 19px 18px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+    display: inline-block;
+}
+.prev img, .next img {
+    width: 29px;
+    height: 46px;
+}
+.lateral-counter {
+    position: absolute;
+    top: 20%;
+}
+/* END CAROUSEL */

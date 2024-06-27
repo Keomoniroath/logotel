@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Logotel</title>
 </head>
 
@@ -21,7 +24,65 @@
         </header>
 
         <main>
-            CONTENT
+            <div class="slide-container">
+                <div class="slide">
+                <img src="img/slider-1.png" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <div class="slide">
+                <img src="img/slider-2.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <div class="slide">
+                <img src="img/slider-3.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+
+                <div class="slide">
+                <img src="img/slider-4.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <a class="prev" onclick="nextSlide(-1)"><img src="img/chevron sinistra.png" /></a>
+                <a class="next" onclick="nextSlide(1)"><img src="img/chevron destra.png" /></a>
+
+                <div class="lateral-counter">
+                    <span class="dot" onclick="currentSlide(1)">1</span>
+                    <span class="dot" onclick="currentSlide(2)">2</span>
+                    <span class="dot" onclick="currentSlide(3)">3</span>
+                    <span class="dot" onclick="currentSlide(4)">4</span>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -32,3 +93,33 @@
 </body>
 
 </html>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function nextSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+</script>
