@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Logotel</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <img src="img/logo/logo.png" class="logo" alt="logo Logotel" />
+            <nav>
+                <a href="#slider">SLIDER</a>
+                <a href="#news">NEWS</a>
+                <a href="#percorso">PERCORSO</a>
+                <a href="#tab">TAB</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <div id="slider" class="slide-container">
+                <div class="slide">
+                <img src="img/slider/slider-1.png" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <div class="slide">
+                <img src="img/slider/slider-2.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <div class="slide">
+                <img src="img/slider/slider-3.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+
+                <div class="slide">
+                <img src="img/slider/slider-4.jpg" style="width:100%">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+                    <p>
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                    </p>
+                    <a href="#">call to action</a>
+                </div>
+                </div>
+            
+                <a class="prev" onclick="nextSlide(-1)"><img src="img/slider/chevron sinistra.png" /></a>
+                <a class="next" onclick="nextSlide(1)"><img src="img/slider/chevron destra.png" /></a>
+
+                <div class="lateral-counter">
+                    <span class="dot" onclick="currentSlide(1)">1</span>
+                    <span class="dot" onclick="currentSlide(2)">2</span>
+                    <span class="dot" onclick="currentSlide(3)">3</span>
+                    <span class="dot" onclick="currentSlide(4)">4</span>
+                </div>
+            </div>
+
+            <div id="news" class="news">
+                <div class="news-container">
+                    <section class="hover-hide">
+                        <picture>
+                            <img src="img/news/news-1.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">13.09.2020</span>
+                            <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                            <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim…</p>
+                        </div>
+                    </section>
+                    <section class="hover-show">
+                        <picture>
+                            <img src="img/news/news-1.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">13.09.2020</span>
+                            <h2>No nummy nibh: euismod tin</h2>
+                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </section>
+                    
+                </div>
+                <div class="news-container active">
+                    <section class="hover-hide">
+                        <picture>
+                            <img src="img/news/news-2.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">12.09.2020</span>
+                            <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                            <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim…</p>
+                        </div>
+                    </section>
+                    <section class="hover-show">
+                        <picture>
+                            <img src="img/news/news-2.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">12.09.2020</span>
+                            <h2>No nummy nibh: euismod tin</h2>
+                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="news-container">
+                    <section class="hover-hide">
+                        <picture>
+                            <img src="img/news/news-3.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">10.09.2020</span>
+                            <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                            <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum sunt in culpa...</p>
+                        </div>
+                    </section>
+                    <section class="hover-show">
+                        <picture>
+                            <img src="img/news/news-3.png" alt="" />
+                        </picture>
+                        <div class="news-text">
+                            <span class="date">10.09.2020</span>
+                            <h2>No nummy nibh: euismod tin</h2>
+                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="onde-1">
+                <h3>Sed diam nonummy nibh euismod tincidunt?</h3>
+                <img src="img/onde/onda-bianco-grigio.png" alt="" />
+            </div>
+
+          
+            <div id="percorso" class="timeline">
+                <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="title">
+                                <span>1 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-1.png" />
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-2.png" />
+                            </div>
+                            <div class="title">
+                                <span>2 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="title">
+                                <span>3 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-3.png" />
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-4.png" />
+                            </div>
+                            <div class="title">
+                                <span>4 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="title">
+                                <span>5 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-5.png" />
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc-timeline">
+                    <div class="info">
+                        <div class="bloc-title">
+                            <div class="icon">
+                                <span class="icon-transparent-bg"></span>
+                                <img src="img/timeline/icon-6.png" />
+                            </div>
+                            <div class="title">
+                                <span>6 .</span>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                        </div>
+                        <div class="bloc-content">
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud ex erci tati on ullamcorper. </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            <div class="onde-2">
+                <img src="img/onde/onda-grigio-bianco.png" alt="" />
+                <h3 class="h3-2">Lorem ipsum dolor
+                sit amet consectetuer?</h3>
+            </div>
+            
+            <div id="tab" class="card-container">
+                <div class="card active">
+                    <span>TAB ROSA</span>
+                    <div class="icon-background"></div>
+                    <img src="img/tab/sveglia.png" alt="" />
+                    <p>Erat volutpat. Ut wisi enim ad minim veniam, 
+                        quis nostrud exerci  magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+                    <a href="#">call to action</a>
+                </div>
+                <div class="card">
+                    <span>TAB GIALLA</span>
+                    <div class="icon-background"></div>
+                    <img src="img/tab/target.png" alt="" />
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci  magna aliquam erat volutpat. 
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                    <a href="#">call to action</a>
+                </div>
+                <div class="card">
+                    <span>TAB TURCHESE</span>
+                    <div class="icon-background"></div>
+                    <img src="img/tab/razzo.png" alt="" />
+                    <p>Enim ad minim veniam, quis nostrud exerci tation ullamcorper. 
+                        erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam era.</p>
+                    <a href="#">call to action</a>
+                </div>
+            </div>
+
+            <div class="onde-3">
+                <img src="img/onde/grafica sfondo.png" alt="" />
+            </div>
+
+        </main>
+
+        <footer>
+            <script src="script.js"></script>
+            <img src="img/logo/logo.png" class="logo" alt="logo Logotel" />
+            <div class="footer-container">
+                <div class="bloc-left">
+                    <ul>
+                        <a href="#">Terms & conditions<span>|</span></a>
+                        <a href="#">Privacy policy<span>|</span></a>
+                        <a href="#">Cookies policy<span>|</span></a>
+                        <a href="#">Copyrights Notification</a>
+                    </ul>
+                    <span>Copyright © 2020 Logotel. All rights reserved.</span>
+                </div>
+                <div class="bloc-right">
+                    <span>SEGUICI SUI SOCIAL:</span>
+                    <ul class="social">
+                        <li><a href="#"><img src="img/icon/FB.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/TW.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/IG.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/LI.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/YT.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
