@@ -1,5 +1,6 @@
 body {
     font-family: Roboto;
+    margin: 0;
 }
 main {
     max-width: 1320px;
@@ -10,9 +11,6 @@ main {
     grid-template-rows: auto 1fr auto;
     max-width: 1320px;
     margin: 0 auto;
-}
-header, main, footer {
-    border: 5px solid red;
 }
 header {
     display: flex;
@@ -41,6 +39,9 @@ nav a {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
+}
+nav a:hover {
+    color: #F07C79;
 }
 
 /* CAROUSEL */
@@ -167,10 +168,10 @@ nav a {
 .hover-show {
     display: none;
 }
-.news-container:hover .hover-hide {
+.news-container:hover .hover-hide, .news-container.active  .hover-hide {
     display: none;
 }
-.news-container:hover .hover-show {
+.news-container:hover .hover-show, .news-container.active .hover-show {
     display: block;
     position: relative;
     color: #FFFFFF;
@@ -218,10 +219,14 @@ h3 {
 .onde-2 {
     top: -150px;
 }
+.onde-3::after {
+    margin: 0;
+}
 .onde-3 {
     position: relative;
-    top: -540px;
+    top: -565px;
     z-index: 1;
+    margin-bottom: -570px;
 }
 .onde-2 img, .onde-1 img, .onde-3 img {
     width: -webkit-fill-available;
@@ -296,10 +301,10 @@ h3 {
     color: #28AFB0;
     border-bottom: 2px solid #28AFB0;
 }
-.card:hover {
+.card:hover, .card.active {
     color: #FFFFFF;
 }
-.card:hover:nth-child(1) {
+.card:hover:nth-child(1), .card.active {
     background-color: #F07C79;
 }
 .card:hover:nth-child(2) {
@@ -308,7 +313,7 @@ h3 {
 .card:hover:nth-child(3) {
     background-color: #28AFB0;
 }
-.card:hover span {
+.card:hover span, .card.active span {
     color: #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
 }

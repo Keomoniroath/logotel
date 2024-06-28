@@ -13,20 +13,20 @@
 
     <div id="container">
         <header>
-            <img src="img/logo.png" class="logo" alt="logo Logotel" />
+            <img src="img/logo/logo.png" class="logo" alt="logo Logotel" />
             <nav>
-                <a href="#">SLIDER</a>
-                <a href="#">NEWS</a>
-                <a href="#">PERCORSO</a>
-                <a href="#">TAB</a>
+                <a href="#slider">SLIDER</a>
+                <a href="#news">NEWS</a>
+                <a href="#percorso">PERCORSO</a>
+                <a href="#tab">TAB</a>
             </nav>
 
         </header>
 
         <main>
-            <div class="slide-container">
+            <div id="slider" class="slide-container">
                 <div class="slide">
-                <img src="img/slider-1.png" style="width:100%">
+                <img src="img/slider/slider-1.png" style="width:100%">
                 <div class="text">
                     <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
                     <p>
@@ -38,7 +38,7 @@
                 </div>
             
                 <div class="slide">
-                <img src="img/slider-2.jpg" style="width:100%">
+                <img src="img/slider/slider-2.jpg" style="width:100%">
                 <div class="text">
                     <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
                     <p>
@@ -50,7 +50,7 @@
                 </div>
             
                 <div class="slide">
-                <img src="img/slider-3.jpg" style="width:100%">
+                <img src="img/slider/slider-3.jpg" style="width:100%">
                 <div class="text">
                     <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
                     <p>
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="slide">
-                <img src="img/slider-4.jpg" style="width:100%">
+                <img src="img/slider/slider-4.jpg" style="width:100%">
                 <div class="text">
                     <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
                     <p>
@@ -73,8 +73,8 @@
                 </div>
                 </div>
             
-                <a class="prev" onclick="nextSlide(-1)"><img src="img/chevron sinistra.png" /></a>
-                <a class="next" onclick="nextSlide(1)"><img src="img/chevron destra.png" /></a>
+                <a class="prev" onclick="nextSlide(-1)"><img src="img/slider/chevron sinistra.png" /></a>
+                <a class="next" onclick="nextSlide(1)"><img src="img/slider/chevron destra.png" /></a>
 
                 <div class="lateral-counter">
                     <span class="dot" onclick="currentSlide(1)">1</span>
@@ -84,11 +84,11 @@
                 </div>
             </div>
 
-            <div class="news">
+            <div id="news" class="news">
                 <div class="news-container">
                     <section class="hover-hide">
                         <picture>
-                            <img src="img/news-1.png" alt="" />
+                            <img src="img/news/news-1.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">13.09.2020</span>
@@ -99,7 +99,7 @@
                     </section>
                     <section class="hover-show">
                         <picture>
-                            <img src="img/news-1.png" alt="" />
+                            <img src="img/news/news-1.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">13.09.2020</span>
@@ -112,10 +112,10 @@
                     </section>
                     
                 </div>
-                <div class="news-container">
+                <div class="news-container active">
                     <section class="hover-hide">
                         <picture>
-                            <img src="img/news-2.png" alt="" />
+                            <img src="img/news/news-2.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">12.09.2020</span>
@@ -126,7 +126,7 @@
                     </section>
                     <section class="hover-show">
                         <picture>
-                            <img src="img/news-2.png" alt="" />
+                            <img src="img/news/news-2.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">12.09.2020</span>
@@ -141,7 +141,7 @@
                 <div class="news-container">
                     <section class="hover-hide">
                         <picture>
-                            <img src="img/news-3.png" alt="" />
+                            <img src="img/news/news-3.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">10.09.2020</span>
@@ -152,7 +152,7 @@
                     </section>
                     <section class="hover-show">
                         <picture>
-                            <img src="img/news-3.png" alt="" />
+                            <img src="img/news/news-3.png" alt="" />
                         </picture>
                         <div class="news-text">
                             <span class="date">10.09.2020</span>
@@ -168,11 +168,11 @@
 
             <div class="onde-1">
                 <h3>Sed diam nonummy nibh euismod tincidunt?</h3>
-                <img src="img/onda-bianco-grigio.png" alt="" />
+                <img src="img/onde/onda-bianco-grigio.png" alt="" />
             </div>
 
           
-            <div class="timeline">
+            <div id="percorso" class="timeline">
                 <div class="bloc-timeline">
                     <div class="info">
                         <div class="bloc-title">
@@ -182,7 +182,7 @@
                             </div>
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-1.png" />
+                                <img src="img/timeline/icon-1.png" />
                             </div>
                         </div>
                         <div class="bloc-content">
@@ -201,7 +201,7 @@
                         <div class="bloc-title">
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-2.png" />
+                                <img src="img/timeline/icon-2.png" />
                             </div>
                             <div class="title">
                                 <span>2 .</span>
@@ -228,7 +228,7 @@
                             </div>
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-3.png" />
+                                <img src="img/timeline/icon-3.png" />
                             </div>
                         </div>
                         <div class="bloc-content">
@@ -247,7 +247,7 @@
                         <div class="bloc-title">
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-4.png" />
+                                <img src="img/timeline/icon-4.png" />
                             </div>
                             <div class="title">
                                 <span>4 .</span>
@@ -274,7 +274,7 @@
                             </div>
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-5.png" />
+                                <img src="img/timeline/icon-5.png" />
                             </div>
                         </div>
                         <div class="bloc-content">
@@ -293,7 +293,7 @@
                         <div class="bloc-title">
                             <div class="icon">
                                 <span class="icon-transparent-bg"></span>
-                                <img src="img/icon-6.png" />
+                                <img src="img/timeline/icon-6.png" />
                             </div>
                             <div class="title">
                                 <span>6 .</span>
@@ -314,15 +314,15 @@
               </div>
 
             <div class="onde-2">
-                <img src="img/onda-grigio-bianco.png" alt="" />
+                <img src="img/onde/onda-grigio-bianco.png" alt="" />
                 <h3 class="h3-2">Lorem ipsum dolor
                 sit amet consectetuer?</h3>
             </div>
             
-            <div class="card-container">
-                <div class="card">
+            <div id="tab" class="card-container">
+                <div class="card active">
                     <span>TAB ROSA</span>
-                    <img src="img/sveglia.png" alt="" />
+                    <img src="img/tab/sveglia.png" alt="" />
                     <p>Erat volutpat. Ut wisi enim ad minim veniam, 
                         quis nostrud exerci  magna aliquam erat volutpat. 
                         Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
@@ -330,14 +330,14 @@
                 </div>
                 <div class="card">
                     <span>TAB GIALLA</span>
-                    <img src="img/target.png" alt="" />
+                    <img src="img/tab/target.png" alt="" />
                     <p>Ut wisi enim ad minim veniam, quis nostrud exerci  magna aliquam erat volutpat. 
                         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
                     <a href="#">call to action</a>
                 </div>
                 <div class="card">
                     <span>TAB TURCHESE</span>
-                    <img src="img/razzo.png" alt="" />
+                    <img src="img/tab/razzo.png" alt="" />
                     <p>Enim ad minim veniam, quis nostrud exerci tation ullamcorper. 
                         erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam era.</p>
                     <a href="#">call to action</a>
@@ -345,13 +345,14 @@
             </div>
 
             <div class="onde-3">
-                <img src="img/grafica sfondo.png" alt="" />
+                <img src="img/onde/grafica sfondo.png" alt="" />
             </div>
 
         </main>
 
         <footer>
-            <img src="img/logo.png" class="logo" alt="logo Logotel" />
+            <script src="script.js"></script>
+            <img src="img/logo/logo.png" class="logo" alt="logo Logotel" />
             <div class="footer-container">
                 <div class="bloc-left">
                     <ul>
@@ -365,73 +366,16 @@
                 <div class="bloc-right">
                     <span>SEGUICI SUI SOCIAL:</span>
                     <ul class="social">
-                        <li><a href="#"><img src="img/FB.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/TW.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/IG.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/LI.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/YT.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/FB.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/TW.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/IG.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/LI.png" alt="" /></a></li>
+                        <li><a href="#"><img src="img/icon/YT.png" alt="" /></a></li>
                     </ul>
                 </div>
             </div>
-
-
         </footer>
     </div>
-
 </body>
 
 </html>
-
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function nextSlide(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-
-    var icon = document.getElementsByClassName("icon");
-    for (var i = 0 ; i < icon.length; i++) {
-        icon[i].addEventListener('click' , displayContent , false ) ; 
-    }
-
-    function displayContent() {
-        var timelineContent = this.parentNode.nextElementSibling;
-        var cardTimeline = timelineContent.parentNode.parentNode;
-
-        timelineContent.style.display = 'block';
-        cardTimeline.style.height = 'auto';
-
-        if(cardTimeline.className == 'bloc-timeline') {
-            cardTimeline.classList.add('active');
-            timelineContent.style.display = 'block';
-            cardTimeline.style.height = 'auto';
-        } else {
-            cardTimeline.classList.remove('active');
-            timelineContent.style.display = 'none';
-            cardTimeline.style.height = '135px';
-        }
-    }
-
-
-</script>
