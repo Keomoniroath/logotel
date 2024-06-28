@@ -248,12 +248,23 @@ h3 {
     background-color: rgba(255, 255, 255, 1);
     margin: 0 10px;
     padding: 0 40px;
+    position: relative;
 }
 .card img {
     width: 219px;
     height: auto;
     display: block;
     margin: 33px auto;
+    z-index: 1;
+}
+.icon-background {
+    height: 234px;
+    content: "";
+    width: 234px;
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    justify-self: center;
 }
 .card span {
     font-size: 34px;
@@ -304,14 +315,35 @@ h3 {
 .card:hover, .card.active {
     color: #FFFFFF;
 }
+.card:hover a, .card.active a {
+    background-color: #FFFFFF;
+}
+.card:hover:nth-child(1) a, .card.active a {
+    color: #EF6F6C;
+}
+.card:hover:nth-child(2) a {
+    color: #E2CA40;
+}
+.card:hover:nth-child(3) a {
+    color: #28AFB0;
+}
 .card:hover:nth-child(1), .card.active {
     background-color: #F07C79;
 }
-.card:hover:nth-child(2) {
+.card:nth-child(1) .icon-background {
+    background-color: #ED6562;
+}
+.card:nth-child(2) .icon-background {
     background-color: #E2CA40;
 }
-.card:hover:nth-child(3) {
+.card:hover:nth-child(2) {
+    background-color: #F8DE47;
+}
+.card:nth-child(3) .icon-background {
     background-color: #28AFB0;
+}
+.card:hover:nth-child(3) {
+    background-color: #2FCCCC;
 }
 .card:hover span, .card.active span {
     color: #FFFFFF;
