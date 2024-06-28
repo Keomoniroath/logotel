@@ -34,6 +34,7 @@ for (var i = 0 ; i < icon.length; i++) {
 function displayTimelineContent() {
     var timelineContent = this.parentNode.nextElementSibling;
     var cardTimeline = timelineContent.parentNode.parentNode;
+    var iconBg = this.children[0];
 
     timelineContent.style.display = 'block';
     cardTimeline.style.height = 'auto';
@@ -42,9 +43,11 @@ function displayTimelineContent() {
         cardTimeline.classList.add('active');
         timelineContent.style.display = 'block';
         cardTimeline.style.height = 'auto';
+        iconBg.style.display = 'block';
     } else {
         cardTimeline.classList.remove('active');
         timelineContent.style.display = 'none';
+        iconBg.style.display = 'none';
         cardTimeline.style.height = '135px';
     }
 }
