@@ -75,3 +75,21 @@ function displayCardContent() {
         if(cardIsActive.length > 0) cardIsActive[0].classList.remove('active');
     } 
 }
+
+// Show mobile menu
+var burgerMenu = document.getElementsByClassName("burger-icon");
+var close = document.getElementsByClassName("close");
+var mobileMenu = document.getElementsByClassName("mobile-menu-content");
+var blocLogo = document.getElementsByClassName("bloc-logo");
+burgerMenu[0].addEventListener('click' , displayMobileMenu , false ); 
+close[0].addEventListener('click' , closeMobileMenu , false ); 
+
+function displayMobileMenu() {
+    mobileMenu[0].style.display = 'flex';
+    blocLogo[0].style.display = 'none';
+}
+
+function closeMobileMenu() {
+    mobileMenu[0].style.display = 'none';
+    blocLogo[0].style.display = 'flex';
+}
