@@ -83,7 +83,7 @@ nav a:hover {
   text-align: left;
   font-family: Helvetica;;
 }
-.dot {
+.number {
     cursor: pointer;
     display: block;
     width: 60px;
@@ -96,7 +96,7 @@ nav a:hover {
     text-align: center;
     padding: 16px;
 }
-.active, .dot:hover {
+.active, .number:hover {
     opacity: 1;
 }
 .text h1 {
@@ -692,7 +692,7 @@ footer ul {
         display: flex;
         justify-content: center;
     }
-    .dot {
+    .number {
         width: 30px;
         height: 30px;
         font-size: 14px;
