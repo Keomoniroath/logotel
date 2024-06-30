@@ -60,10 +60,13 @@ nav a:hover {
   margin: auto;
 }
 .slide {
-    display: block;
+    display: none;
 }
 .slide img {
     height: 820px;
+}
+.active-slide, .number.active {
+    display: block;
 }
 .prev, .next {
   cursor: pointer;
