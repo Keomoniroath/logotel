@@ -99,7 +99,7 @@ nav a:hover {
     text-align: center;
     padding: 16px;
 }
-.active, .number:hover {
+.active {
     opacity: 1;
 }
 .text h1 {

@@ -6,14 +6,14 @@ var chevron = document.getElementsByClassName("chevron");
 var timer = setInterval(autoPlay, 5000);
 
 function nextSlide(n) {
-    showSlides(n);
+    showSlides(n, null);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(null, n);
 }
 
-function showSlides(n) {
+function showSlides(n, idSlide) {
     var i;
     var activeSlide = document.getElementsByClassName("active-slide");
     var id = activeSlide[0].id;
@@ -25,14 +25,20 @@ function showSlides(n) {
     for (i = 0; i < number.length; i++) {
         number[i].className = number[i].className.replace(" active", "");
     }
-    if(id == 3 && n == 1) {
-        nextId = 0;
-    } else if (id == 0 && n < 0) {
-        nextId = 3;
+
+    if(idSlide == null) {
+        if(id == 3 && n == 1) {
+            nextId = 0;
+        } else if (id == 0 && n < 0) {
+            nextId = 3;
+        }
+        else {
+            nextId = parseInt(id) + n;
+        }
+    } else {
+        nextId = idSlide;
     }
-    else {
-        nextId = parseInt(id) + n;
-    }
+
     slides[nextId].style.display = "block";
     number[nextId].className += " active";
     slides[nextId].className += " active-slide";
