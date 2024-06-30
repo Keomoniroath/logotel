@@ -85,7 +85,12 @@ function displayTimelineContent() {
         cardTimeline.classList.remove('active');
         timelineContent.style.display = 'none';
         iconBg.style.display = 'none';
-        cardTimeline.style.height = '135px';
+        var mobile = window.matchMedia("(max-width: 450px)");
+        if (mobile.matches) {
+            cardTimeline.style.height = '90px';
+        } else {
+            cardTimeline.style.height = '135px';
+        }
     }
 }
 
