@@ -3,9 +3,9 @@
 <head>  
     <meta charset = "utf-8">  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">  
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">  
     <title>Logotel Newsletter</title>  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 <style>  
 * { box-sizing: border-box; }  
@@ -19,6 +19,9 @@ table {
     border-spacing: 0;
     border: none;
 } 
+img {
+    border: 0;
+}
 .onde-1 {
     width: 600px;
 }
@@ -28,6 +31,7 @@ table {
 }
 .row-header tbody {
     position: relative;
+    bottom: -7px;
 }
 .row-logo {
     position: absolute;
@@ -96,7 +100,7 @@ table {
     text-align: right;
     display: block;
 }
-.row-icon td:nth-child(2) {
+.row-icon td.text {
     width: 245px;
 }
 .row-icon td:nth-child(1) {
@@ -145,6 +149,9 @@ table {
     height: auto;
     margin-right: 16px;
 }
+.row-footer .social li:last-child img {
+    margin-right: 0;
+}
 .row-footer ul {
     list-style-type: none;
     display: flex;
@@ -167,6 +174,37 @@ table {
 .row-footer ul a span {
     margin: 0 7px;
 }
+.show-mobile {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    .row-icon {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .row-icon tr {
+        display: grid;
+        justify-content: center;
+    }
+    .row-icon tr td.bloc-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .row-icon a {
+        text-align: center;
+    }
+    .row-icon tr:nth-child(2) td:nth-child(2) {
+        padding-left: 0;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
 </style>  
 <body style="width:100%;margin:0;padding:0;">
     <table cellspacing="0" cellpadding="0">
@@ -176,13 +214,17 @@ table {
                     <table class="row-header" cellspacing="0" cellpadding="0">
                         <tbody>
                             <tr class="row-logo">
-                                <td><img src="../img/logo/LOGO NERO.png" class="logo"></td>
+                                <td cellspacing="0" cellpadding="0"><img src="../img/logo/LOGO NERO.png" class="logo"></td>
                             </tr>
                             <tr>
                                 <td><img src="../img/onde/onda-bianco-grigio.png" class="onde-1"></td>
                             </tr>
                         </tbody>
                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <table class="row-header-text" cellspacing="0" cellpadding="0">
                         <tbody>
                             <tr>
@@ -197,14 +239,18 @@ table {
                             </tr>
                         </tbody>
                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <table class="row-icon">
                         <tbody>
                             <tr>
-                                <td>
+                                <td class="bloc-icon">
                                     <div class="background-icon"></div>
                                     <img src="../img/tab/sveglia.png">
                                 </td>
-                                <td>
+                                <td class="text">
                                     <h2>Lorem Ipsum</h2>
                                     <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
                                         read more</p>
@@ -212,23 +258,29 @@ table {
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="text hide-mobile">
                                     <h2>Lorem Ipsum</h2>
                                     <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
                                         read more</p>
                                     <a>read more</a>
                                 </td>
-                                <td>
+                                <td class="bloc-icon">
                                     <div class="background-icon"></div>
                                     <img src="../img/tab/razzo.png">
                                 </td>
+                                <td class="text show-mobile">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
+                                        read more</p>
+                                    <a>read more</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="bloc-icon">
                                     <div class="background-icon"></div>
                                     <img src="../img/tab/target.png">
                                 </td>
-                                <td>
+                                <td class="text">
                                     <h2>Lorem Ipsum</h2>
                                     <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
                                         read more</p>
@@ -237,10 +289,14 @@ table {
                             </tr>
                         </tbody>
                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <table class="row-footer">
                         <tbody>
                             <tr>
-                                <td><img src="../img/logo/LOGO NERO.png" alt="logo" /></td>
+                                <td><img src="../img/logo/logotel.png" alt="logo" /></td>
                             </tr>
                             <tr>
                                 <td>
