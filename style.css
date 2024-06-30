@@ -20,9 +20,6 @@ header {
     justify-content: space-between;
     background-color: rgba(39, 39, 39, 1);
     height: 120px;
-    /* grid-template-columns: repeat(12, 1fr); */
-    /* display: grid; */
-    /* gap: 19px; */
     position: fixed;
     top: 0;
     width: 1320px;

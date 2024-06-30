@@ -43,7 +43,7 @@ function showSlides(n, idSlide) {
     number[nextId].className += " active";
     slides[nextId].className += " active-slide";
 
-    // Clear autoplay interval and reset at 5000
+    // Clear autoplay interval and reset timer
     clearInterval(timer);
     timer = setInterval(autoPlay, 5000);
 }
