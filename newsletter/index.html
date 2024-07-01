@@ -1,0 +1,329 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset = "utf-8">  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">  
+    <title>Logotel Newsletter</title>  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+<style>  
+* { box-sizing: border-box; }  
+body {  
+    font-family: 'Roboto';  
+    margin: 0;  
+}  
+table {
+    width: 600px;
+    margin: auto;
+    border-spacing: 0;
+    border: none;
+} 
+img {
+    border: 0;
+}
+.onde-1 {
+    width: 600px;
+}
+.logo {
+    width: 164px;
+    height: 60px;
+}
+.row-header tbody {
+    position: relative;
+    bottom: -7px;
+}
+.row-logo {
+    position: absolute;
+    right: 0;
+    margin-right: 65px;
+    margin-top: 60px;
+}
+.row-header-text {
+    background: #272727;
+    padding: 30px 50px 80px;
+}
+.row-header-text h1 {
+    color: #F07C79;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 50px;
+}
+.row-header-text p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    padding-bottom: 92px;
+}
+.row-header-text a {
+    color: #FFFFFF;
+    border-radius: 16px;
+    background-color: rgba(240, 124, 121, 1);
+    padding: 20px 13px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.row-icon {
+    padding: 60px 50px;
+}
+.row-icon img {
+    width: 182px;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    padding: 7px 0 12px;
+}
+.row-icon h2 {
+    color: rgba(237, 101, 98, 1);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: justified;
+    line-height: 24px;
+}
+.row-icon p {
+    color: #272727;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.row-icon a {
+    color: #ED6562;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: right;
+    display: block;
+}
+.row-icon td.text {
+    width: 245px;
+}
+.row-icon td:nth-child(1) {
+    position: relative;
+}
+.row-icon .background-icon {
+    background-color: #ED6562;
+    content: "";
+    width: 194px;
+    height: 194px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.row-icon td {
+    padding: 30px 0;
+}
+.row-icon tr:nth-child(2) td:nth-child(2) {
+    padding-left: 60px;
+}
+.row-icon tr:nth-child(2) h2, .row-icon tr:nth-child(2) a {
+    color: #28AFB0;
+}
+.row-icon tr:nth-child(2) .background-icon {
+    background-color: #28AFB0;
+}
+.row-icon tr:nth-child(3) h2, .row-icon tr:nth-child(3) a {
+    color: #E2CA40;
+}
+.row-icon tr:nth-child(3) .background-icon {
+    background-color: #E2CA40;
+}
+.row-footer {
+    background-color: #272727;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 47px 0 29px;
+}
+.row-footer img {
+    width: 69px;
+    height: auto;
+}
+.row-footer .social img {
+    width: 40px;
+    height: auto;
+    margin-right: 16px;
+}
+.row-footer .social li:last-child img {
+    margin-right: 0;
+}
+.row-footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.row-footer .social {
+    margin: 33px 0 44px;
+}
+.row-footer ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+.row-footer td {
+    display: flex;
+    justify-content: center;
+}
+.row-footer ul a span {
+    margin: 0 7px;
+}
+.show-mobile {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    .row-icon {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .row-icon tr {
+        display: grid;
+        justify-content: center;
+    }
+    .row-icon tr td.bloc-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .row-icon a {
+        text-align: center;
+    }
+    .row-icon tr:nth-child(2) td:nth-child(2) {
+        padding-left: 0;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
+</style>  
+<body style="width:100%;margin:0;padding:0;">
+    <table cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="row-header" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr class="row-logo">
+                                <td cellspacing="0" cellpadding="0"><img src="../img/logo/LOGO NERO.png" class="logo"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/onde/onda-bianco-grigio.png" class="onde-1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="row-header-text" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td><h1>Sed diam nonummy nibh euismod tincidunt?</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>Lorem ipsum dolor sit amet ed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                                    ad minim veniam, quis nostrud exerci tation ullamcorper.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.google.com">call to action</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="row-icon">
+                        <tbody>
+                            <tr>
+                                <td class="bloc-icon">
+                                    <div class="background-icon"></div>
+                                    <img src="../img/tab/sveglia.png">
+                                </td>
+                                <td class="text">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
+                                        read more</p>
+                                    <a>read more</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text hide-mobile">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
+                                        read more</p>
+                                    <a>read more</a>
+                                </td>
+                                <td class="bloc-icon">
+                                    <div class="background-icon"></div>
+                                    <img src="../img/tab/razzo.png">
+                                </td>
+                                <td class="text show-mobile">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
+                                        read more</p>
+                                    <a>read more</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bloc-icon">
+                                    <div class="background-icon"></div>
+                                    <img src="../img/tab/target.png">
+                                </td>
+                                <td class="text">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci magna aliquam erat volutpat.
+                                        read more</p>
+                                    <a>read more</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="row-footer">
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/logo/logotel.png" alt="logo" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="social">
+                                        <li><a href="#"><img src="../img/icon/FB.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="../img/icon/TW.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="../img/icon/IG.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="../img/icon/LI.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="../img/icon/YT.png" alt="" /></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="terms">
+                                        <li><a href="#">Cancella iscrizione<span>|</span></a></li>
+                                        <li><a href="#">Condizioni di utilizzo<span>|</span></a></li>
+                                        <li><a href="#">Privacy<span>|</span></a></li>
+                                        <li><a href="#">Centro assistenza</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </body>  
+</html>  
